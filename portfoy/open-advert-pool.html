@@ -62,10 +62,7 @@
                     <div class="bg-dark">
                         <div class="container ms-3">
                             <ul class="list-inline fs-4">
-                                <li
-                                    class="list-inline-item border-bottom border-warning"
-                                    style="border-width: 3px !important"
-                                >
+                                <li class="list-inline-item">
                                     <button type="button" class="btn fs-4">
                                         <i
                                             class="bi bi-file-ruled text-warning me-2"
@@ -75,7 +72,10 @@
                                         >
                                     </button>
                                 </li>
-                                <li class="list-inline-item">
+                                <li
+                                    class="list-inline-item border-bottom border-warning"
+                                    style="border-width: 3px !important"
+                                >
                                     <button type="button" class="btn fs-4">
                                         <i
                                             class="bi bi-handbag text-warning me-2"
@@ -96,164 +96,115 @@
                                     </button>
                                 </li>
                             </ul>
-                            <div
-                                class="card mb-3"
-                                style="background-color: #4a4c5c !important"
-                            >
-                                <div class="row p-2">
-                                    <div
-                                        style="color: #f7e435"
-                                        class="fs-3 d-flex justify-content-end"
-                                    >
-                                        <div class="mx-4">
-                                            <i class="bi bi-heart me-3"></i>
-                                            <i class="bi bi-share"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 pe-0">
-                                        <div class="main-image-container mb-2">
-                                            <img
-                                                src="../assets/ilanresim.png"
-                                                id="mainImage"
-                                                class="img-fluid rounded w-100"
-                                                alt="Property main image"
-                                            />
-                                        </div>
-                                        <div class="row g-2">
-                                            <div class="col-4">
-                                                <img
-                                                    src="../assets/ilanresim.png"
-                                                    class="thumbnail active w-100 rounded"
-                                                    style="
-                                                        height: 80px;
-                                                        object-fit: cover;
-                                                        cursor: pointer;
-                                                        border: 2px solid
-                                                            #f7e435;
-                                                    "
-                                                    alt="Thumbnail 1"
-                                                    onclick="updateMainImage(this)"
-                                                />
-                                            </div>
-                                            <div class="col-4">
-                                                <img
-                                                    src="../assets/ilanresim.png"
-                                                    class="thumbnail w-100 rounded"
-                                                    style="
-                                                        height: 80px;
-                                                        object-fit: cover;
-                                                        cursor: pointer;
-                                                    "
-                                                    alt="Thumbnail 2"
-                                                    onclick="updateMainImage(this)"
-                                                />
-                                            </div>
-                                            <div class="col-4">
-                                                <img
-                                                    src="../assets/ilanresim.png"
-                                                    class="thumbnail w-100 rounded"
-                                                    style="
-                                                        height: 80px;
-                                                        object-fit: cover;
-                                                        cursor: pointer;
-                                                    "
-                                                    alt="Thumbnail 3"
-                                                    onclick="updateMainImage(this)"
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8 ps-0">
-                                        <div class="card-body text-white">
-                                            <h3 class="card-title">
-                                                Erzurum büyük apartman
-                                            </h3>
-                                            <div
-                                                class="d-flex justify-content-between align-items-center"
+                            <div>
+                                <ul class="nav nav-pills">
+                                    <div class="d-flex gap-3">
+                                        <li class="nav-item mx-2">
+                                            <a
+                                                class="nav-link text-secondary"
+                                                style="
+                                                    background-color: #f7e435;
+                                                "
+                                                href="#"
+                                                >Tümü</a
                                             >
-                                                <h4>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                style="
+                                                    background-color: #4a4c5c !important;
+                                                "
+                                                class="nav-link active text-white"
+                                                href="#"
+                                                >Aktif ilanlar</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                style="
+                                                    background-color: #4a4c5c !important;
+                                                "
+                                                class="nav-link active text-white"
+                                                href="#"
+                                                >Pasif ilanlar</a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                style="
+                                                    background-color: #4a4c5c !important;
+                                                "
+                                                class="nav-link active text-white"
+                                                href="#"
+                                                >Favoriler ilanlar</a
+                                            >
+                                        </li>
+                                    </div>
+                                    <li class="nav-item ms-auto me-3">
+                                        <a
+                                            style="
+                                                background-color: #f7e435 !important;
+                                                color: black !important;
+                                            "
+                                            class="nav-link active text-white fw-bold"
+                                            href="#"
+                                            ><i
+                                                class="bi bi-plus-lg me-3 fs-6 fw-bold"
+                                            ></i
+                                            >Portföy ekle</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="card my-5 text-white"
+                                style="background-color: #4a4c5c"
+                            >
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img
+                                            src="../assets/ilanresim.png"
+                                            class="img-fluid rounded-start p-3"
+                                            alt="advert image"
+                                        />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div
+                                            class="d-flex align-items-center h-100"
+                                        >
+                                            <h5 class="mx-3">
+                                                Erzurum Büyük Apartman
+                                            </h5>
+                                            <div
+                                                class="d-flex flex-column gap-3"
+                                            >
+                                                <div>
                                                     <i
                                                         class="bi bi-geo-alt-fill"
                                                         style="color: #f7e435"
-                                                    ></i>
-                                                    Erzurum, Merkez
-                                                </h4>
-                                                <h4>
+                                                    ></i
+                                                    ><span class="ms-2 fw-bold"
+                                                        >Erzurum, Merkez</span
+                                                    >
+                                                </div>
+                                                <div>
                                                     <i
                                                         class="bi bi-clipboard-fill"
                                                         style="color: #f7e435"
                                                     ></i>
-                                                    Kiralık
-                                                </h4>
-                                                <h3
-                                                    class="fw-bold"
-                                                    style="color: #f7e435"
-                                                >
-                                                    $17.000.000
-                                                </h3>
-                                            </div>
-                                            <p class="card-text">
-                                                <i
-                                                    class="bi bi-clock me-2"
-                                                    style="color: #f7e435"
-                                                ></i>
-                                                <small>
-                                                    Last updated 3 mins ago
-                                                </small>
-                                            </p>
-                                            <h6>Mülk sahibi</h6>
-                                            <div
-                                                class="d-flex flex-row flex-wrap"
-                                            >
-                                                <div class="d-flex flex-row">
-                                                    <div>
-                                                        <img
-                                                            src="../assets/profilepicture.png"
-                                                            alt="user profile picture"
-                                                        />
-                                                    </div>
-                                                    <div>
-                                                        <span class="ms-2">
-                                                            Cenk Aksit
-                                                        </span>
-                                                        <p>+90 555 555 55 55</p>
-                                                    </div>
+                                                    <span class="ms-2 fw-bold"
+                                                        >Kiralık</span
+                                                    >
                                                 </div>
-                                                <div class="mx-5 mb-3">
+                                                <div>
                                                     <i
-                                                        class="bi bi-chat-left-fill fs-3"
+                                                        class="bi bi-clock"
                                                         style="color: #f7e435"
                                                     ></i>
-                                                    <i
-                                                        class="bi bi-whatsapp fs-3 mx-3"
-                                                        style="color: #f7e435"
-                                                    ></i>
-                                                    <i
-                                                        class="bi bi-telephone-outbound-fill fs-3"
-                                                        style="color: #f7e435"
-                                                    ></i>
+                                                    <span class="ms-2 fw-bold"
+                                                        >1 ay, önce</span
+                                                    >
                                                 </div>
-                                            </div>
-                                            <div>
-                                                <ul class="nav nav-pills">
-                                                    <li class="nav-item">
-                                                        <a
-                                                            class="nav-link active text-white bg-dark"
-                                                            href="#"
-                                                            >İlan Açıklaması</a
-                                                        >
-                                                    </li>
-                                                    <li class="nav-item mx-2">
-                                                        <a
-                                                            class="nav-link text-secondary"
-                                                            style="
-                                                                background-color: #f7e435;
-                                                            "
-                                                            href="#"
-                                                            >İlan Bilgileri</a
-                                                        >
-                                                    </li>
-                                                </ul>
                                             </div>
                                             <div class="rounded my-4">
                                                 <div class="row g-3">
@@ -263,7 +214,31 @@
                                                         >
                                                             <div>
                                                                 <div
-                                                                    class="fw-bold fs-5"
+                                                                    class="fs-5"
+                                                                >
+                                                                    <i
+                                                                        class="bi bi-clock-fill"
+                                                                        style="
+                                                                            color: #f7e435;
+                                                                        "
+                                                                    ></i>
+                                                                    500
+                                                                </div>
+                                                                <div
+                                                                    class="text-secondary small text-center"
+                                                                >
+                                                                    m² Brüt
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div
+                                                            class="d-flex align-items-center text-white p-2"
+                                                        >
+                                                            <div>
+                                                                <div
+                                                                    class="fs-5"
                                                                 >
                                                                     <i
                                                                         class="bi bi-building fs-4 me-2"
@@ -287,31 +262,7 @@
                                                         >
                                                             <div>
                                                                 <div
-                                                                    class="fw-bold fs-5"
-                                                                >
-                                                                    <i
-                                                                        class="bi bi-water fs-4 me-2"
-                                                                        style="
-                                                                            color: #f7e435;
-                                                                        "
-                                                                    ></i>
-                                                                    500
-                                                                </div>
-                                                                <div
-                                                                    class="text-secondary small text-center"
-                                                                >
-                                                                    m² Brüt
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div
-                                                            class="d-flex align-items-center text-white p-2"
-                                                        >
-                                                            <div>
-                                                                <div
-                                                                    class="fw-bold fs-5"
+                                                                    class="fs-5"
                                                                 >
                                                                     <i
                                                                         class="bi bi-house fs-4 me-2"
@@ -335,7 +286,7 @@
                                                         >
                                                             <div>
                                                                 <div
-                                                                    class="fw-bold fs-5"
+                                                                    class="fs-5"
                                                                 >
                                                                     <i
                                                                         class="bi bi-arrows-angle-expand fs-4 me-2"
@@ -359,7 +310,7 @@
                                                         >
                                                             <div>
                                                                 <div
-                                                                    class="fw-bold fs-5"
+                                                                    class="fs-5"
                                                                 >
                                                                     <i
                                                                         class="bi bi-door-closed fs-4 me-2"
@@ -383,7 +334,7 @@
                                                         >
                                                             <div>
                                                                 <div
-                                                                    class="fw-bold fs-5"
+                                                                    class="fs-5"
                                                                 >
                                                                     <i
                                                                         class="bi bi-calendar3 fs-4 me-2"
@@ -404,6 +355,14 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <h3
+                                            style="color: #f7e435"
+                                            class="ms-auto me-5"
+                                        >
+                                            $ 17.000.000
+                                        </h3>
                                     </div>
                                 </div>
                             </div>
