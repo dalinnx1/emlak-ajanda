@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Emlak Ajanda</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+        <link href="../lib/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <div data-include="../components/navbar.html"></div>
+
+        <!-- Main Container -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-2" style="padding: 0 !important">
+                    <!-- Buradaki inline stili kaldır -->
+                    <div data-include="../components/sidebar.html"></div>
+                </div>
+                <!-- Main Content -->
+                <div class="col-md-10 main-content bg-dark m-0 p-0">
+                    <div
+                        class="d-flex justify-content-between align-items-center mb-4 p-3 bg-secondary"
+                    >
+                        <div>
+                            <a href="#" class="me-3 text-decoration-none">
+                                <i class="bi bi-arrow-left text-white fs-4"></i>
+                            </a>
+                            <a
+                                class="mb-0 fw-bold text-white text-decoration-none fs-5"
+                            >
+                                <i class="bi bi-file-ruled text-warning"></i>
+                                Portföylerim
+                            </a>
+                        </div>
+                        <div class="input-group flex-nowrap" style="width: 25%">
+                            <span
+                                class="input-group-text bg-dark"
+                                id="addon-wrapping"
+                            >
+                                <i
+                                    class="bi bi-search"
+                                    style="color: #ffe600"
+                                ></i>
+                            </span>
+                            <input
+                                type="text"
+                                class="form-control bg-dark"
+                                placeholder="Ara"
+                            />
+                        </div>
+                    </div>
+                    <div class="bg-dark">
+                        <div class="container ms-3">
+                            <ul class="list-inline fs-4">
+                                <li
+                                    class="list-inline-item border-bottom border-warning"
+                                    style="border-width: 3px !important"
+                                >
+                                    <button type="button" class="btn fs-4">
+                                        <i
+                                            class="bi bi-file-ruled text-warning me-2"
+                                        ></i
+                                        ><span class="text-white"
+                                            >Portföyüm</span
+                                        >
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button type="button" class="btn fs-4">
+                                        <i
+                                            class="bi bi-handbag text-warning me-2"
+                                        ></i>
+                                        <span class="text-white"
+                                            >Portföy Havuzu</span
+                                        >
+                                    </button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button type="button" class="btn fs-4">
+                                        <i
+                                            class="bi bi-search text-warning me-2"
+                                        ></i
+                                        ><span class="text-white"
+                                            >Portföy Arıyorum</span
+                                        >
+                                    </button>
+                                </li>
+                            </ul>
+                            <div
+                                class="card mb-3"
+                                style="background-color: #4a4c5c !important"
+                            >
+                                <div class="row p-2">
+                                    <div
+                                        style="color: #f7e435"
+                                        class="fs-3 d-flex justify-content-end"
+                                    >
+                                        <div class="mx-4">
+                                            <i class="bi bi-heart me-3"></i>
+                                            <i class="bi bi-share"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 pe-0">
+                                        <div class="main-image-container mb-2">
+                                            <img
+                                                src="../assets/ilanresim.png"
+                                                id="mainImage"
+                                                class="img-fluid rounded w-100"
+                                                alt="Property main image"
+                                            />
+                                        </div>
+                                        <div class="row g-2">
+                                            <div class="col-4">
+                                                <img
+                                                    src="../assets/ilanresim.png"
+                                                    class="thumbnail active w-100 rounded"
+                                                    style="
+                                                        height: 80px;
+                                                        object-fit: cover;
+                                                        cursor: pointer;
+                                                        border: 2px solid
+                                                            #f7e435;
+                                                    "
+                                                    alt="Thumbnail 1"
+                                                    onclick="updateMainImage(this)"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="../assets/ilanresim.png"
+                                                    class="thumbnail w-100 rounded"
+                                                    style="
+                                                        height: 80px;
+                                                        object-fit: cover;
+                                                        cursor: pointer;
+                                                    "
+                                                    alt="Thumbnail 2"
+                                                    onclick="updateMainImage(this)"
+                                                />
+                                            </div>
+                                            <div class="col-4">
+                                                <img
+                                                    src="../assets/ilanresim.png"
+                                                    class="thumbnail w-100 rounded"
+                                                    style="
+                                                        height: 80px;
+                                                        object-fit: cover;
+                                                        cursor: pointer;
+                                                    "
+                                                    alt="Thumbnail 3"
+                                                    onclick="updateMainImage(this)"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 ps-0">
+                                        <div class="card-body text-white">
+                                            <h3 class="card-title">
+                                                Erzurum büyük apartman
+                                            </h3>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center"
+                                            >
+                                                <h4>
+                                                    <i
+                                                        class="bi bi-geo-alt-fill"
+                                                        style="color: #f7e435"
+                                                    ></i>
+                                                    Erzurum, Merkez
+                                                </h4>
+                                                <h4>
+                                                    <i
+                                                        class="bi bi-clipboard-fill"
+                                                        style="color: #f7e435"
+                                                    ></i>
+                                                    Kiralık
+                                                </h4>
+                                                <h3
+                                                    class="fw-bold"
+                                                    style="color: #f7e435"
+                                                >
+                                                    $17.000.000
+                                                </h3>
+                                            </div>
+                                            <p class="card-text">
+                                                <i
+                                                    class="bi bi-clock me-2"
+                                                    style="color: #f7e435"
+                                                ></i>
+                                                <small>
+                                                    Last updated 3 mins ago
+                                                </small>
+                                            </p>
+                                            <h6>Mülk sahibi</h6>
+                                            <div
+                                                class="d-flex flex-row flex-wrap"
+                                            >
+                                                <div class="d-flex flex-row">
+                                                    <div>
+                                                        <img
+                                                            src="../assets/profilepicture.png"
+                                                            alt="user profile picture"
+                                                        />
+                                                    </div>
+                                                    <div>
+                                                        <span class="ms-2">
+                                                            Cenk Aksit
+                                                        </span>
+                                                        <p>+90 555 555 55 55</p>
+                                                    </div>
+                                                </div>
+                                                <div class="mx-5 mb-3">
+                                                    <i
+                                                        class="bi bi-chat-left-fill fs-3"
+                                                        style="color: #f7e435"
+                                                    ></i>
+                                                    <i
+                                                        class="bi bi-whatsapp fs-3 mx-3"
+                                                        style="color: #f7e435"
+                                                    ></i>
+                                                    <i
+                                                        class="bi bi-telephone-outbound-fill fs-3"
+                                                        style="color: #f7e435"
+                                                    ></i>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <ul class="nav nav-pills">
+                                                    <li class="nav-item">
+                                                        <a
+                                                            class="nav-link active text-white bg-dark"
+                                                            href="#"
+                                                            >İlan Açıklaması</a
+                                                        >
+                                                    </li>
+                                                    <li class="nav-item mx-2">
+                                                        <a
+                                                            class="nav-link text-secondary"
+                                                            style="
+                                                                background-color: #f7e435;
+                                                            "
+                                                            href="#"
+                                                            >İlan Bilgileri</a
+                                                        >
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="rounded my-4">
+                                                <div class="row g-3">
+                                                    <!-- Brüt Alan -->
+                                                    <div class="col-md-4">
+                                                        <div
+                                                            class="d-flex align-items-center text-white p-2"
+                                                        >
+                                                            <div>
+                                                                <div
+                                                                    class="fw-bold fs-5"
+                                                                >
+                                                                    <i
+                                                                        class="bi bi-building fs-4 me-2"
+                                                                        style="
+                                                                            color: #f7e435;
+                                                                        "
+                                                                    ></i>
+                                                                    500
+                                                                </div>
+                                                                <div
+                                                                    class="text-secondary small text-center"
+                                                                >
+                                                                    m² Brüt
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Banyo Sayısı -->
+                                                    <div class="col-md-4">
+                                                        <div
+                                                            class="d-flex align-items-center text-white p-2"
+                                                        >
+                                                            <div>
+                                                                <div
+                                                                    class="fw-bold fs-5"
+                                                                >
+                                                                    <i
+                                                                        class="bi bi-water fs-4 me-2"
+                                                                        style="
+                                                                            color: #f7e435;
+                                                                        "
+                                                                    ></i>
+                                                                    500
+                                                                </div>
+                                                                <div
+                                                                    class="text-secondary small text-center"
+                                                                >
+                                                                    m² Brüt
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Mülk Türü -->
+                                                    <div class="col-md-4">
+                                                        <div
+                                                            class="d-flex align-items-center text-white p-2"
+                                                        >
+                                                            <div>
+                                                                <div
+                                                                    class="fw-bold fs-5"
+                                                                >
+                                                                    <i
+                                                                        class="bi bi-house fs-4 me-2"
+                                                                        style="
+                                                                            color: #f7e435;
+                                                                        "
+                                                                    ></i>
+                                                                    500
+                                                                </div>
+                                                                <div
+                                                                    class="text-secondary small text-center"
+                                                                >
+                                                                    m² Brüt
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Net Alan -->
+                                                    <div class="col-md-4">
+                                                        <div
+                                                            class="d-flex align-items-center text-white p-2"
+                                                        >
+                                                            <div>
+                                                                <div
+                                                                    class="fw-bold fs-5"
+                                                                >
+                                                                    <i
+                                                                        class="bi bi-arrows-angle-expand fs-4 me-2"
+                                                                        style="
+                                                                            color: #f7e435;
+                                                                        "
+                                                                    ></i>
+                                                                    500
+                                                                </div>
+                                                                <div
+                                                                    class="text-secondary small text-center"
+                                                                >
+                                                                    m² Brüt
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Oda Sayısı -->
+                                                    <div class="col-md-4">
+                                                        <div
+                                                            class="d-flex align-items-center text-white p-2"
+                                                        >
+                                                            <div>
+                                                                <div
+                                                                    class="fw-bold fs-5"
+                                                                >
+                                                                    <i
+                                                                        class="bi bi-door-closed fs-4 me-2"
+                                                                        style="
+                                                                            color: #f7e435;
+                                                                        "
+                                                                    ></i>
+                                                                    500
+                                                                </div>
+                                                                <div
+                                                                    class="text-secondary small text-center"
+                                                                >
+                                                                    m² Brüt
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!-- Bina Yaşı -->
+                                                    <div class="col-md-4">
+                                                        <div
+                                                            class="d-flex align-items-center text-white p-2"
+                                                        >
+                                                            <div>
+                                                                <div
+                                                                    class="fw-bold fs-5"
+                                                                >
+                                                                    <i
+                                                                        class="bi bi-calendar3 fs-4 me-2"
+                                                                        style="
+                                                                            color: #f7e435;
+                                                                        "
+                                                                    ></i>
+                                                                    500
+                                                                </div>
+                                                                <div
+                                                                    class="text-secondary small text-center"
+                                                                >
+                                                                    m² Brüt
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../lib/script.js"></script>
+    </body>
+</html>
