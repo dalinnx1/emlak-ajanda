@@ -1,5 +1,4 @@
 body {
-    min-height: 100vh;
     background-color: #4a4c5c;
 }
 
@@ -124,6 +123,18 @@ body {
     color: white !important;
 }
 
+.icon-warning {
+    color: #ffe600 !important;
+}
+
+.text-warning {
+    color: #ffe600 !important;
+}
+
+.bg-custom {
+    background-color: #333c4b;
+}
+
 @media (max-width: 768px) {
     .sidebar {
         min-height: auto;
@@ -160,4 +171,12 @@ body {
     .btn-danger {
         padding: 0.5rem 1rem;
     }
+
+    .sidebar {
+        min-height: auto !important;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
