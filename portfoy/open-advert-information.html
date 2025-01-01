@@ -30,20 +30,20 @@
                     <div
                         class="d-flex justify-content-between align-items-center mb-4 p-3 bg-secondary"
                     >
-                        <div>
+                        <div class="d-flex align-items-center">
                             <a href="#" class="me-3 text-decoration-none">
                                 <i class="bi bi-arrow-left text-white fs-4"></i>
                             </a>
                             <a
                                 class="mb-0 fw-bold text-white text-decoration-none fs-5"
                             >
-                                <i class="bi bi-file-ruled text-warning"></i>
+                                <img src="../assets/icons/pack.png" class="mb-2" alt="">
                                 Portföylerim
                             </a>
                         </div>
                         <div class="input-group flex-nowrap w-25">
                             <span
-                                class="input-group-text bg-dark"
+                                class="input-group-text bg-dark d-none d-md-block"
                                 id="addon-wrapping"
                             >
                                 <i class="bi bi-search icon-warning"></i>
@@ -62,19 +62,15 @@
                                     class="list-inline-item border-bottom border-warning border-3"
                                 >
                                     <button type="button" class="btn fs-4">
-                                        <i
-                                            class="bi bi-file-ruled icon-warning me-2"
-                                        ></i
-                                        ><span class="text-white"
+                                        <img src="../assets/icons/pack.png" class="mb-2" alt="">
+                                        <span class="text-white"
                                             >Portföyüm</span
                                         >
                                     </button>
                                 </li>
                                 <li class="list-inline-item">
                                     <button type="button" class="btn fs-4">
-                                        <i
-                                            class="bi bi-handbag icon-warning me-2"
-                                        ></i>
+                                        <img src="../assets/icons/handshake.png" alt="">
                                         <span class="text-white"
                                             >Portföy Havuzu</span
                                         >
@@ -82,10 +78,8 @@
                                 </li>
                                 <li class="list-inline-item">
                                     <button type="button" class="btn fs-4">
-                                        <i
-                                            class="bi bi-search icon-warning me-2"
-                                        ></i
-                                        ><span class="text-white"
+                                        <img src="../assets/icons/magnefier.png" alt="">
+                                        <span class="text-white"
                                             >Portföy Arıyorum</span
                                         >
                                     </button>
@@ -122,15 +116,18 @@
                                                 style="z-index: 10"
                                                 onclick="navigateImage(1)"
                                             >
-                                                <i
-                                                    class="bi bi-arrow-right"
-                                                ></i>
+                                                <i class="bi bi-arrow-right"></i>
                                             </button>
                                         </div>
                                         <div
                                             class="row g-2"
                                             id="thumbnailsContainer"
-                                        ></div>
+                                        >
+                                            <div class="thumbnail">1</div>
+                                            <div class="thumbnail">2</div>
+                                            <div class="thumbnail">3</div>
+                                            <div class="thumbnail">+8</div>
+                                        </div>
                                     </div>
                                     <div class="col-md-8 ps-0">
                                         <div class="card-body text-white">
@@ -144,7 +141,7 @@
                                                     <i
                                                         class="bi bi-geo-alt-fill icon-warning"
                                                     ></i>
-                                                    Erzurum, Merkez
+                                                    <span>Erzurum, Merkez</span>
                                                 </h4>
                                                 <h4>
                                                     <i
@@ -158,12 +155,9 @@
                                                     $17.000.000
                                                 </h3>
                                             </div>
-                                            <p class="card-text">
-                                                <i
-                                                    class="bi bi-clock me-2 icon-warning"
-                                                ></i>
+                                            <p class="card-text my-3">
                                                 <small>
-                                                    Last updated 3 mins ago
+                                                    29 Gün Önce
                                                 </small>
                                             </p>
                                             <h6>Mülk sahibi</h6>
@@ -185,15 +179,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="mx-5 mb-3">
-                                                    <i
-                                                        class="bi bi-chat-left-fill fs-3 icon-warning"
-                                                    ></i>
-                                                    <i
-                                                        class="bi bi-whatsapp fs-3 mx-3 icon-warning"
-                                                    ></i>
-                                                    <i
-                                                        class="bi bi-telephone-outbound-fill fs-3 icon-warning"
-                                                    ></i>
+                                                    <img src="../assets/icons/Message_button.png" alt="">
+                                                    <img src="../assets/icons/whatsapp-button.png" class="mx-3" alt="">
+                                                    <img src="../assets/icons/Call_button.png" alt="">
                                                 </div>
                                             </div>
                                             <div>
@@ -222,11 +210,30 @@
                                                         >
                                                             <div>
                                                                 <div
-                                                                    class="fw-bold fs-5"
+                                                                    class="fs-5"
                                                                 >
                                                                     <i
-                                                                        class="bi bi-building fs-4 me-2 icon-warning"
+                                                                        class="bi bi-clock-fill icon-warning"
                                                                     ></i>
+                                                                    1 - 5
+                                                                </div>
+                                                                <div
+                                                                    class="text-secondary small text-center"
+                                                                >
+                                                                    <span>Bina Yaşı</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div
+                                                            class="d-flex align-items-center text-white p-2"
+                                                        >
+                                                            <div>
+                                                                <div
+                                                                    class="fs-5"
+                                                                >
+                                                                    <img src="../assets/icons/ruler-combined.png" alt="">
                                                                     500
                                                                 </div>
                                                                 <div
@@ -243,17 +250,15 @@
                                                         >
                                                             <div>
                                                                 <div
-                                                                    class="fw-bold fs-5"
+                                                                    class="fs-5"
                                                                 >
-                                                                    <i
-                                                                        class="bi bi-water fs-4 me-2 icon-warning"
-                                                                    ></i>
-                                                                    500
+                                                                    <img src="../assets/icons/bath.png" alt="">
+                                                                    2
                                                                 </div>
                                                                 <div
                                                                     class="text-secondary small text-center"
                                                                 >
-                                                                    m² Brüt
+                                                                    Banyo Sayısı
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -264,17 +269,15 @@
                                                         >
                                                             <div>
                                                                 <div
-                                                                    class="fw-bold fs-5"
+                                                                    class="fs-5"
                                                                 >
-                                                                    <i
-                                                                        class="bi bi-house fs-4 me-2 icon-warning"
-                                                                    ></i>
-                                                                    500
+                                                                    <img src="../assets/icons/building.png" alt="">
+                                                                    Villa
                                                                 </div>
                                                                 <div
                                                                     class="text-secondary small text-center"
                                                                 >
-                                                                    m² Brüt
+                                                                    Bina Yaşı
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -285,17 +288,15 @@
                                                         >
                                                             <div>
                                                                 <div
-                                                                    class="fw-bold fs-5"
+                                                                    class="fs-5"
                                                                 >
-                                                                    <i
-                                                                        class="bi bi-arrows-angle-expand fs-4 me-2 icon-warning"
-                                                                    ></i>
-                                                                    500
+                                                                    <img src="../assets/icons/ruler-duz.png" alt="">
+                                                                    300
                                                                 </div>
                                                                 <div
                                                                     class="text-secondary small text-center"
                                                                 >
-                                                                    m² Brüt
+                                                                    m² Net
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -306,38 +307,15 @@
                                                         >
                                                             <div>
                                                                 <div
-                                                                    class="fw-bold fs-5"
+                                                                    class="fs-5"
                                                                 >
-                                                                    <i
-                                                                        class="bi bi-door-closed fs-4 me-2 icon-warning"
-                                                                    ></i>
-                                                                    500
+                                                                    <img src="../assets/icons/bed.png" alt="">
+                                                                    4
                                                                 </div>
                                                                 <div
                                                                     class="text-secondary small text-center"
                                                                 >
-                                                                    m² Brüt
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div
-                                                            class="d-flex align-items-center text-white p-2"
-                                                        >
-                                                            <div>
-                                                                <div
-                                                                    class="fw-bold fs-5"
-                                                                >
-                                                                    <i
-                                                                        class="bi bi-calendar3 fs-4 me-2 icon-warning"
-                                                                    ></i>
-                                                                    500
-                                                                </div>
-                                                                <div
-                                                                    class="text-secondary small text-center"
-                                                                >
-                                                                    m² Brüt
+                                                                    Oda Sayısı
                                                                 </div>
                                                             </div>
                                                         </div>
