@@ -1,0 +1,16 @@
+<svg width="11" height="17" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="11" height="17" fill="#1E1E1E"/>
+<g id="Profil">
+<g id="Body">
+<rect width="1280" height="735" transform="translate(-216 -16)" fill="#333C4B"/>
+</g>
+<g id="Title Bar">
+<rect width="1073" height="48" transform="translate(-10 -16)" fill="#4A4C5C"/>
+<g id="Frame 242">
+<g id="Frame 23">
+<path id="Back_icon" d="M0.351768 7.65027L7.14964 0.85239C7.6195 0.382537 8.37926 0.382537 8.84411 0.85239L9.97376 1.98204C10.4436 2.45189 10.4436 3.21165 9.97376 3.67651L5.16026 8.5L9.97876 13.3185C10.4486 13.7883 10.4486 14.5481 9.97876 15.013L8.84911 16.1476C8.37926 16.6175 7.6195 16.6175 7.15464 16.1476L0.356766 9.34973C-0.118086 8.87988 -0.118086 8.12012 0.351768 7.65027Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
